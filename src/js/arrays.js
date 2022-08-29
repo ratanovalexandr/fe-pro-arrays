@@ -6,7 +6,8 @@
 */
 function forEach(array, callback) {
   const arr = [];
-  for (let i = 0; i < array.length; i++) {
+  length = array.length;
+  for (let i = 0; i < length; i++) {
     arr.push(callback(array[i], i, array));
   }
 }
